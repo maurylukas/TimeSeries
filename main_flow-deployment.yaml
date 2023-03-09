@@ -1,0 +1,65 @@
+###
+### A complete description of a Prefect Deployment for flow 'BTC price pipeline'
+###
+name: btc_flow
+description: null
+version: 3373619eac121ca53bcc9146b43d46d4
+# The work queue that will handle this deployment's runs
+work_queue_name: default
+work_pool_name: null
+tags: []
+parameters: {
+  path: '/Users/anapa/OneDrive/Documentos/GitHub/TimeSeries/Data/btc_prices.csv'
+}
+schedule:
+  interval: 60.0
+  anchor_date: '2023-03-09T20:38:14.220230+00:00'
+  timezone: UTC
+is_schedule_active: null
+infra_overrides: {}
+infrastructure:
+  type: process
+  env: {}
+  labels: {}
+  name: null
+  command: null
+  stream_output: true
+  working_dir: null
+  block_type_slug: process
+  _block_type_slug: process
+
+###
+### DO NOT EDIT BELOW THIS LINE
+###
+flow_name: BTC price pipeline
+manifest_path: null
+storage: null
+path: C:\Users\anapa\OneDrive\Documentos\GitHub\TimeSeries
+entrypoint: Prefect\flow_04_deployment.py:main_flow
+parameter_openapi_schema:
+  title: Parameters
+  type: object
+  properties:
+    tickers:
+      title: tickers
+      position: 0
+      type: string
+    period:
+      title: period
+      position: 1
+      type: string
+    interval:
+      title: interval
+      position: 2
+      type: string
+    path:
+      title: path
+      position: 3
+      type: string
+  required:
+  - tickers
+  - period
+  - interval
+  - path
+  definitions: null
+timestamp: '2023-03-09T20:38:14.232440+00:00'
