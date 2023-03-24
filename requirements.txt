@@ -121,3 +121,6 @@ websocket-client==1.5.1
 websockets==10.4
 yfinance==0.2.10
 zipp==3.12.1
+
+tensorflow
+matplotlib
