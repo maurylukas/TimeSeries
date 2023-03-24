@@ -65,7 +65,7 @@ if __name__ == "__main__":
     main_fc_flow(
         tickers="BTC-USD",
         period="30d",
-        interval="1h",
+        interval="5m",
         path1=r'./Data/btc_prices.csv',
         path2=r'./Data/btc_prices_forecast.csv'
     )
